@@ -15,3 +15,8 @@ pushd package/lean
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/wsdd2
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/bonding
 popd
+
+# Upgrade out-date packages
+pushd package/libs
+rm -rf nettle
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/libs/nettle
