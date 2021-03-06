@@ -20,3 +20,8 @@ popd
 pushd package/libs
 rm -rf nettle
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/libs/nettle
+popd
+pushd package/utils
+rm -rf util-linux
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/utils/util-linux
+popd
